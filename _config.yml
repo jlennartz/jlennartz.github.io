@@ -229,6 +229,12 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
+  - _pages/blog.md
+  - _pages/cv.md
+  - _pages/news.md
+  - _pages/projects.md
+  - _pages/publications.md
+  - _pages/repositories.md
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
@@ -243,7 +249,6 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
