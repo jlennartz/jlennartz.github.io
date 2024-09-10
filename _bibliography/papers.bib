@@ -3,34 +3,110 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+
+@article{Lennartz2024Active,
+	 year = {2024},
+	 title = {Active {Learning} for {Scribble}-based {Diffusion} {MRI} {Segmentation}},
+   abstract = {Scribbles are a popular form of weak annotation for the segmentation of three-dimensional medical images, but typically require iterative refinement to achieve the desired segmentation map. The complexity of diffusion MRI (dMRI) poses additional challenges. Previous work addressed the high dimensionality of dMRI via unsupervised representation learning, and combined it with a random forest classifier that can be re-trained quickly enough to provide interactive feedback to the human annotator. Our work extends that framework in multiple ways. Our main contribution is to add an active learning component that suggests locations in which additional scribbles should be placed. It relies on uncertainty quantification via test time augmentation (TTA). Second, we observe that TTA increases segmentation accuracy even by itself. Moreover, we demonstrate that anomaly detection via isolation forests effectively suppresses false positives that arise when generalizing from sparse scribbles. Taken together, these contributions substantially improve the accuracy that can be achieved with various annotation budgets.},
+   journal = {UNSURE Workshop, MICCAI},
+	 author = {Jonathan Lennartz and Golo Pohl and Thomas Schultz},
+   preview = {UNSURE24.png},
+   selected={true},
+  
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@Inproceedings{Lennartz2024Active_proceedings,
+	 year = {2024},
+	 title = {Active {Learning} for {Scribble}-based {Diffusion} {MRI} {Segmentation}},
+   abstract = {Scribbles are a popular form of weak annotation for the segmentation of three-dimensional medical images, but typically require iterative refinement to achieve the desired segmentation map. The complexity of diffusion MRI (dMRI) poses additional challenges. Previous work addressed the high dimensionality of dMRI via unsupervised representation learning, and combined it with a random forest classifier that can be re-trained quickly enough to provide interactive feedback to the human annotator. Our work extends that framework in multiple ways. Our main contribution is to add an active learning component that suggests locations in which additional scribbles should be placed. It relies on uncertainty quantification via test time augmentation (TTA). Second, we observe that TTA increases segmentation accuracy even by itself. Moreover, we demonstrate that anomaly detection via isolation forests effectively suppresses false positives that arise when generalizing from sparse scribbles. Taken together, these contributions substantially improve the accuracy that can be achieved with various annotation budgets.},
+	 type = {Inproceedings},
+	 booktitle = {Uncertainty for {Safe} {Utilization} of {Machine} {Learning} in {Medical} {Imaging}},
+	 author = {Jonathan Lennartz and Golo Pohl and Thomas Schultz},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+
+@article{Lennartz2023Segmentation,
+	 year = {2023},
+	 title = {Segmentation {Distortion}: Quantifying {Segmentation} {Uncertainty} {Under} {Domain} {Shift} via the {Effects} of {Anomalous} {Activations}},
+   abstract = {Domain shift occurs when training U-Nets for medical image segmentation with images from one device, but applying them to images from a different device. This often reduces accuracy, and it poses a challenge for uncertainty quantification, when incorrect segmentations are produced with high confidence. Recent work proposed to detect such failure cases via anomalies in feature space: Activation patterns that deviate from those observed during training are taken as an indication that the input is not handled well by the network, and its output should not be trusted. However, such latent space distances primarily detect whether images are from different scanners, not whether they are correctly segmented. Therefore, we propose a novel segmentation distortion measure for uncertainty quantification. It uses an autoencoder to make activations more similar to those that were observed during training, and propagates the result through the remainder of the U-Net. We demonstrate that the extent to which this affects the segmentation correlates much more strongly with segmentation errors than distances in activation space, and that it quantifies uncertainty under domain shift better than entropy in the output of a single U-Net, or an ensemble of U-Nets.},
+	 journal   = {MICCAI},
+   doi = {10.1007/978-3-031-43898-1_31},
+	 url = {https://link.springer.com/chapter/10.1007/978-3-031-43898-1_31},
+	 author = {Jonathan Lennartz and Thomas Schultz},
+	 pages = {316--325},
+   pdf   = {MICCAI23.pdf},
+   html={https://link.springer.com/chapter/10.1007/978-3-031-43898-1_31},
+   preview = {MICCAI23.png},
+   selected = {true},
+}
+
+@Inproceedings{Lennartz2023Segmentation_proceedings,
+	 year = {2023},
+	 title = {Segmentation {Distortion}: Quantifying {Segmentation} {Uncertainty} {Under} {Domain} {Shift} via the {Effects} of {Anomalous} {Activations}},
+   abstract = {Domain shift occurs when training U-Nets for medical image segmentation with images from one device, but applying them to images from a different device. This often reduces accuracy, and it poses a challenge for uncertainty quantification, when incorrect segmentations are produced with high confidence. Recent work proposed to detect such failure cases via anomalies in feature space: Activation patterns that deviate from those observed during training are taken as an indication that the input is not handled well by the network, and its output should not be trusted. However, such latent space distances primarily detect whether images are from different scanners, not whether they are correctly segmented. Therefore, we propose a novel segmentation distortion measure for uncertainty quantification. It uses an autoencoder to make activations more similar to those that were observed during training, and propagates the result through the remainder of the U-Net. We demonstrate that the extent to which this affects the segmentation correlates much more strongly with segmentation errors than distances in activation space, and that it quantifies uncertainty under domain shift better than entropy in the output of a single U-Net, or an ensemble of U-Nets.},
+	 type = {Inproceedings},
+	 series = {LNCS},
+	 volume = {14222},
+	 publisher = {Springer},
+	 booktitle = {Medical {Image} {Computing} and {Computer} {Assisted} {Intervention} ({MICCAI}), {Part} {III}},
+	 doi = {10.1007/978-3-031-43898-1_31},
+	 url = {https://link.springer.com/chapter/10.1007/978-3-031-43898-1_31},
+	 author = {Jonathan Lennartz and Thomas Schultz},
+	 pages = {316--325},
+   pdf   = {MICCAI23.pdf},
+}
+% dimensions={true},
+% google_scholar_id={UeHWp8X0CEIC},
+
+@article{iclr,
+  author    = {Erik Scharw{\"{a}}chter and
+               Jonathan Lennartz and
+               Emmanuel M{\"{u}}ller},
+  title     = {Differentiable Segmentation of Sequences},
+  abstract  = {Segmented models are widely used to describe non-stationary sequential data with discrete change points. Their estimation usually requires solving a mixed discrete-continuous optimization problem, where the segmentation is the discrete part and all other model parameters are continuous. A number of estimation algorithms have been developed that are highly specialized for their specific model assumptions. The dependence on non-standard algorithms makes it hard to integrate segmented models in state-of-the-art deep learning architectures that critically depend on gradient-based optimization techniques. In this work, we formulate a relaxed variant of segmented models that enables joint estimation of all model parameters, including the segmentation, with gradient descent. We build on recent advances in learning continuous warping functions and propose a novel family of warping functions based on the two-sided power (TSP) distribution. TSP-based warping functions are differentiable, have simple closed-form expressions, and can represent segmentation functions exactly. Our formulation includes the important class of segmented generalized linear models as a special case, which makes it highly versatile. We use our approach to model the spread of COVID-19 with Poisson regression, apply it on a change point detection task, and learn classification models with concept drift. The experiments show that our approach effectively learns all these tasks with standard algorithms for gradient descent.},
+  journal   = {ICLR},
+  year      = {2021},
+  timestamp = {Wed, 23 Jun 2021 17:36:39 +0200},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  pdf       = {ICLR2021.pdf},
+  html      = {https://ls9-www.cs.tu-dortmund.de/publications/ICLR2021.pdf},
+  preview = {ICLR21.png},
+  selected  = {true},
+} 
+% google_scholar_id={zYLM7Y9cAGgC},
+ 
+
+@article{heaan,
+  title={Approximate K-Means on Encrypted Data},
+  author={Lennartz, Jonathan and Schmitz, Simon and Tomar, Priya and N{\"u}sken, Michael},
+  journal={crypto day matters 32},
+  year={2021},
+  publisher={Gesellschaft f{\"u}r Informatik eV/FG KRYPTO}
+}
+
+@article{arnold,
+  title={Interoperability of Interpersonal Communications Services - A Consumer Perspective},
+  author={Arnold, Ren{\'e} and Schneider, Anna and Lennartz, Jonathan},
+  journal={Telecommunications Policy},
+  volume={44},
+  number={3},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@article{liebe,
+  title={Strategische {A}usrichtung Bedeutender {A}nbieter von {I}nternetplattformen.},
+  author={Liebe, Andrea and Lennartz, Jonathan and Arnold, Ren{\'e}},
+  year={2020},
+  journal={WIK Diskussionsbeitrag}
+}
+
+@article{a3c,
+    title={Neural Networks as Reinforcement Learning Agents Winning Atari Pong},
+    author={K{\"u}rsch, Johannes and Lennartz, Jonathan and Nogga, Jan},
+    journal={{CSCUBS} Vol 005},
+    publisher={University of Bonn},
+    year={2018}
 }
 
 @article{PhysRev.47.777,
@@ -57,59 +133,6 @@
   video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
   additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
   annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
   inspirehep_id = {3255}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
-}
